@@ -1,10 +1,3 @@
-body {
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-attachment: fixed !important;
-}
-
 #jeu
 {
 	taille de police : 12 px ;
@@ -192,3 +185,10 @@ body {
 }
 
 #game.filtersOn .thing-icon{filter:drop-shadow(3px 3px 1px rgba(0,0,0,0.5));}
+
+body {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+}
