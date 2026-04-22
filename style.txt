@@ -4,3 +4,191 @@ body {
     background-position: center center !important;
     background-attachment: fixed !important;
 }
+
+#jeu
+{
+	taille de police : 12 px ;
+	couleur:rgba(0,0,0,0.9);
+	ombre portée du texte : aucune ;
+}
+
+
+.boîte
+{
+	alignement du texte : centré ;
+	marge intérieure : 0 px ;
+	ombre portée : aucune ;
+}
+.thing,.box-header,.box-footer,.box-bit
+{
+	arrière-plan : rgba(255,255,255,0.5);
+	bordure:1px solide rgba(0,0,0,0.9);
+	marge:1px;
+}
+.chose:survol
+{
+	arrière-plan : rgba(255,255,255,0.75);
+}
+
+.box-header
+{
+	marge inférieure : 4 px ;
+}
+.box-footer
+{
+	marge supérieure : 4 px ;
+}
+
+.titre
+{
+	décoration de texte : soulignement ;
+}
+
+#boîte-principale
+{
+	gauche:0px;
+	haut:0px;
+	bas:0px;
+	débordement:masqué;
+	largeur : 60 % ;
+	position:absolute;
+}
+#box-res.fullWidth
+{
+	largeur : 100 % ;
+	top:5%;
+	hauteur : 5 % ;
+	hauteur minimale : 32 px ;
+	z-index:100;
+	position:absolute;
+}
+#boutons-boîte
+{
+	haut:0px;
+	droite:0px;
+	bas:0px;
+	gauche:0px;
+	position:absolute;
+}
+#magasin-boîte
+{
+	droite:0px;
+	haut:0px;
+	bas:0px;
+	largeur : 40 % ;
+	position:absolute;
+}
+#bâtiments-boîtes, #améliorations-boîtes
+{
+	haut:0px;
+	bas:0px;
+	largeur : 50 % ;
+	droite : 0 % ;
+	débordement-x:masqué;
+	débordement-y:défilement;
+	padding-bottom:48px;/* ceci permet d'intégrer les boutons d'information et de paramètres */
+	position:absolute;
+}
+#bâtiments-boîtes
+{droite:50%;}
+
+#box-buildings>.box-header
+{
+	marge inférieure : 16 px ;
+}
+#Présentoirenvolume
+{
+	marge:-20px 24px 6px 24px;
+	bordure : aucune ;
+	arrière-plan : transparent ;
+}
+
+
+.chose
+{
+	affichage : bloc en ligne ;
+	marge intérieure : 0 px ;
+	curseur : pointeur ;
+}
+.chose:active
+{
+	opacité : 0,5 ;
+}
+.upgrade.owned,.achiev.owned
+{
+	box-shadow:0px 0px 0px 2px rgba(0,0,0,0.5) inset;
+}
+.chose.ne.peut.pas.se.offrir
+{
+	opacité : 0,65 ;
+}
+.upgrade.cantAfford
+{
+	bordure : aucune ;
+}
+
+.thing-costs{font-weight:bold;text-shadow:1px 1px 0px rgba(0,0,0,0.5);}
+.cost.hasEnough{color:#0f0;}
+.cost.notEnough{color:#f00;}
+
+
+.bouton>.texte-chose
+{
+	décoration de texte : soulignement ;
+}
+
+.bâtiment
+{
+	affichage : bloc ;
+	marge droite : 0px;
+	taille de police : 14 px ;
+}
+
+.pleinelargeur
+{
+	affichage : bloc ;
+	marge gauche : 0px;
+	marge droite : 0px;
+	z-index:10;
+}
+#jeu .pleinelargeur
+{
+	hauteur : automatique ;
+	hauteur minimale : automatique ;
+}
+.fullWidth,.fullWidth:hover
+{
+	arrière-plan : rgba(0,0,0,0.75);
+	ombre portée : aucune ;
+	couleur : #fff;
+}
+.fullWidth:avant,.fullWidth:après
+{
+	contenu:'';
+	hauteur : 1 px ;
+	arrière-plan : rgba(255,255,255,0.75);
+	position:absolute;
+	gauche:0px;
+	droite:0px;
+	z-index:-1;
+}
+.fullWidth:avant{top:-1px;}
+.fullWidth:after{bottom:-1px;}
+
+.fullWidth .thing-icon
+{
+	marge supérieure : -10px ;
+	marge inférieure : -10px ;
+}
+.fullWidth .thing-text
+{
+	marge supérieure : -4px ;
+	marge inférieure : -4px ;
+}
+
+.inscription
+{
+	police-weight:normal;
+}
+
+#game.filtersOn .thing-icon{filter:drop-shadow(3px 3px 1px rgba(0,0,0,0.5));}
