@@ -77,98 +77,14 @@
 	padding-bottom:48px;
 	position:absolute;
 }
-#box-buildings
-{right:50%;}
-#box-buildings>.box-header
-{
-	margin-bottom:16px;
-}
-#volumeDisplay
-{
-	margin:-20px 24px 6px 24px;
-	border:none;
-	background:transparent;
-}
-.thing
-{
-	display:inline-block;
-	padding:0px;
-	cursor:pointer;
-}
-.thing:active
-{
-	opacity:0.5;
-}
-.upgrade.owned,.achiev.owned
-{
-	box-shadow:0px 0px 0px 2px rgba(0,0,0,0.5) inset;
-}
-.thing.cantAfford
-{
-	opacity:0.65;
-}
-.upgrade.cantAfford
-{
-	border:none;
-}
-.thing-costs{font-weight:bold;text-shadow:1px 1px 0px rgba(0,0,0,0.5);}
-.cost.hasEnough{color:#0f0;}
-.cost.notEnough{color:#f00;}
-.button>.thing-text
-{
-	text-decoration:underline;
-}
+
 .building
 {
 	display:block;
 	margin-right:0px;
 	font-size:14px;
 }
-.fullWidth
-{
-	display:block;
-	margin-left:0px;
-	margin-right:0px;
-	z-index:10;
-}
-#game .fullWidth
-{
-	height:auto;
-	min-height:auto;
-}
-.fullWidth,.fullWidth:hover
-{
-	background:rgba(0,0,0,0.75);
-	box-shadow:none;
-	color:#fff;
-}
-.fullWidth:before,.fullWidth:after
-{
-	content:'';
-	height:1px;
-	background:rgba(255,255,255,0.75);
-	position:absolute;
-	left:0px;
-	right:0px;
-	z-index:-1;
-}
-.fullWidth:before{top:-1px;}
-.fullWidth:after{bottom:-1px;}
-.fullWidth .thing-icon
-{
-	margin-top:-10px;
-	margin-bottom:-10px;
-}
-.fullWidth .thing-text
-{
-	margin-top:-4px;
-	margin-bottom:-4px;
-}
-.label
-{
-	font-weight:normal;
-}
-#game.filtersOn .thing-icon{filter:drop-shadow(3px 3px 1px rgba(0,0,0,0.5));}
+
 body {
 	background-size:cover !important;
 	background-repeat:no-repeat !important;
