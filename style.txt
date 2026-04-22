@@ -1,194 +1,177 @@
-#jeu
+#game
 {
-	taille de police : 12 px ;
-	couleur:rgba(0,0,0,0.9);
-	ombre portée du texte : aucune ;
+	font-size:12px;
+	color:rgba(0,0,0,0.9);
+	text-shadow:none;
 }
-
-
-.boîte
+.box
 {
-	alignement du texte : centré ;
-	marge intérieure : 0 px ;
-	ombre portée : aucune ;
+	text-align:center;
+	padding:0px;
+	box-shadow:none;
 }
 .thing,.box-header,.box-footer,.box-bit
 {
-	arrière-plan : rgba(255,255,255,0.5);
-	bordure:1px solide rgba(0,0,0,0.9);
-	marge:1px;
+	background:rgba(255,255,255,0.5);
+	border:1px solid rgba(0,0,0,0.9);
+	margin:1px;
 }
-.chose:survol
+.thing:hover
 {
-	arrière-plan : rgba(255,255,255,0.75);
+	background:rgba(255,255,255,0.75);
 }
-
 .box-header
 {
-	marge inférieure : 4 px ;
+	margin-bottom:4px;
 }
 .box-footer
 {
-	marge supérieure : 4 px ;
+	margin-top:4px;
 }
-
-.titre
+.title
 {
-	décoration de texte : soulignement ;
+	text-decoration:underline;
 }
-
-#boîte-principale
+#box-main
 {
-	gauche:0px;
-	haut:0px;
-	bas:0px;
-	débordement:masqué;
-	largeur : 60 % ;
+	left:0px;
+	top:0px;
+	bottom:0px;
+	overflow:hidden;
+	width:60%;
 	position:absolute;
 }
 #box-res.fullWidth
 {
-	largeur : 100 % ;
+	width:100%;
 	top:5%;
-	hauteur : 5 % ;
-	hauteur minimale : 32 px ;
+	height:5%;
+	min-height:32px;
 	z-index:100;
 	position:absolute;
 }
-#boutons-boîte
+#box-buttons
 {
-	haut:0px;
-	droite:0px;
-	bas:0px;
-	gauche:0px;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
 	position:absolute;
 }
-#magasin-boîte
+#box-store
 {
-	droite:0px;
-	haut:0px;
-	bas:0px;
-	largeur : 40 % ;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	width:40%;
 	position:absolute;
 }
-#bâtiments-boîtes, #améliorations-boîtes
+#box-buildings,#box-upgrades
 {
-	haut:0px;
-	bas:0px;
-	largeur : 50 % ;
-	droite : 0 % ;
-	débordement-x:masqué;
-	débordement-y:défilement;
-	padding-bottom:48px;/* ceci permet d'intégrer les boutons d'information et de paramètres */
+	top:0px;
+	bottom:0px;
+	width:50%;
+	right:0%;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	padding-bottom:48px;
 	position:absolute;
 }
-#bâtiments-boîtes
-{droite:50%;}
-
+#box-buildings
+{right:50%;}
 #box-buildings>.box-header
 {
-	marge inférieure : 16 px ;
+	margin-bottom:16px;
 }
-#Présentoirenvolume
+#volumeDisplay
 {
-	marge:-20px 24px 6px 24px;
-	bordure : aucune ;
-	arrière-plan : transparent ;
+	margin:-20px 24px 6px 24px;
+	border:none;
+	background:transparent;
 }
-
-
-.chose
+.thing
 {
-	affichage : bloc en ligne ;
-	marge intérieure : 0 px ;
-	curseur : pointeur ;
+	display:inline-block;
+	padding:0px;
+	cursor:pointer;
 }
-.chose:active
+.thing:active
 {
-	opacité : 0,5 ;
+	opacity:0.5;
 }
 .upgrade.owned,.achiev.owned
 {
 	box-shadow:0px 0px 0px 2px rgba(0,0,0,0.5) inset;
 }
-.chose.ne.peut.pas.se.offrir
+.thing.cantAfford
 {
-	opacité : 0,65 ;
+	opacity:0.65;
 }
 .upgrade.cantAfford
 {
-	bordure : aucune ;
+	border:none;
 }
-
 .thing-costs{font-weight:bold;text-shadow:1px 1px 0px rgba(0,0,0,0.5);}
 .cost.hasEnough{color:#0f0;}
 .cost.notEnough{color:#f00;}
-
-
-.bouton>.texte-chose
+.button>.thing-text
 {
-	décoration de texte : soulignement ;
+	text-decoration:underline;
 }
-
-.bâtiment
+.building
 {
-	affichage : bloc ;
-	marge droite : 0px;
-	taille de police : 14 px ;
+	display:block;
+	margin-right:0px;
+	font-size:14px;
 }
-
-.pleinelargeur
+.fullWidth
 {
-	affichage : bloc ;
-	marge gauche : 0px;
-	marge droite : 0px;
+	display:block;
+	margin-left:0px;
+	margin-right:0px;
 	z-index:10;
 }
-#jeu .pleinelargeur
+#game .fullWidth
 {
-	hauteur : automatique ;
-	hauteur minimale : automatique ;
+	height:auto;
+	min-height:auto;
 }
 .fullWidth,.fullWidth:hover
 {
-	arrière-plan : rgba(0,0,0,0.75);
-	ombre portée : aucune ;
-	couleur : #fff;
+	background:rgba(0,0,0,0.75);
+	box-shadow:none;
+	color:#fff;
 }
-.fullWidth:avant,.fullWidth:après
+.fullWidth:before,.fullWidth:after
 {
-	contenu:'';
-	hauteur : 1 px ;
-	arrière-plan : rgba(255,255,255,0.75);
+	content:'';
+	height:1px;
+	background:rgba(255,255,255,0.75);
 	position:absolute;
-	gauche:0px;
-	droite:0px;
+	left:0px;
+	right:0px;
 	z-index:-1;
 }
-.fullWidth:avant{top:-1px;}
+.fullWidth:before{top:-1px;}
 .fullWidth:after{bottom:-1px;}
-
 .fullWidth .thing-icon
 {
-	marge supérieure : -10px ;
-	marge inférieure : -10px ;
+	margin-top:-10px;
+	margin-bottom:-10px;
 }
 .fullWidth .thing-text
 {
-	marge supérieure : -4px ;
-	marge inférieure : -4px ;
+	margin-top:-4px;
+	margin-bottom:-4px;
 }
-
-.inscription
+.label
 {
-	police-weight:normal;
+	font-weight:normal;
 }
-
 #game.filtersOn .thing-icon{filter:drop-shadow(3px 3px 1px rgba(0,0,0,0.5));}
-
 body {
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-attachment: fixed !important;
+	background-size:cover !important;
+	background-repeat:no-repeat !important;
+	background-position:center center !important;
+	background-attachment:fixed !important;
 }
