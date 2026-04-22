@@ -4,34 +4,6 @@
 	color:rgba(0,0,0,0.9);
 	text-shadow:none;
 }
-.box
-{
-	text-align:center;
-	padding:0px;
-	box-shadow:none;
-}
-.thing,.box-header,.box-footer,.box-bit
-{
-	background:rgba(255,255,255,0.5);
-	border:1px solid rgba(0,0,0,0.9);
-	margin:1px;
-}
-.thing:hover
-{
-	background:rgba(255,255,255,0.75);
-}
-.box-header
-{
-	margin-bottom:4px;
-}
-.box-footer
-{
-	margin-top:4px;
-}
-.title
-{
-	text-decoration:underline;
-}
 
 body {
 	background-size:cover !important;
