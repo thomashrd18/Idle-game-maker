@@ -11,13 +11,21 @@ Settings
 	stylesheet:https://raw.githubusercontent.com/thomashrd18/Idle-game-maker/main/style.txt
 
 Layout
-  *resources
+*main
+  contains:res, buttons
+  *res
     contains:Resources
-    header:These are your resources.
+    class:fullWidth
+  *buttons
+    contains:Buttons
+*store
+  contains:buildings, upgrades
   *buildings
-    contains:Buildings
-    header:These are things you can build.
+    contains:BulkDisplay, Buildings
+    header:Buildings
     tooltip origin:left
-  *unlockables
-    contains:Upgrades, Achievements
+  *upgrades
+    contains:Upgrades
+    header:Upgrades
+    costs:hide
     names:hide
