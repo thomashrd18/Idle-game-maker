@@ -7,4 +7,5 @@ Let's make a game!
 	version:0,1
 
 Settings
+	background:https://raw.githubusercontent.com/thomashrd18/Idle-game-maker/main/background.png
 	stylesheet:https://raw.githubusercontent.com/thomashrd18/Idle-game-maker/main/style.txt
