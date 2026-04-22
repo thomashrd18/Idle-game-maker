@@ -4,7 +4,7 @@ Let's make a game!
 	desc:Aide Bartaba à devenir le prince du royaume !
 	created:22/04/2026
 	updated:--/--/--
-	version:0,1
+	version:0.36
 
 Settings
 	background:https://raw.githubusercontent.com/thomashrd18/Idle-game-maker/main/background.png
