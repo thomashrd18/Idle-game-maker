@@ -7,4 +7,4 @@ Let's make a game!
 	version:0,1
 
 Settings
-	background:background.jpg
+	background:Idle-game-maker/background.jpg
