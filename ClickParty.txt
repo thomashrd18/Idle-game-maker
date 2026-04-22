@@ -6,3 +6,5 @@ Let's make a game!
 	updated:--/--/--
 	version:0,1
 
+Settings
+	background:background.jpg
